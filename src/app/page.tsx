@@ -4,7 +4,7 @@ import * as Input from './components/Input'
 import * as FileInput from './components/Form/FileInput'
 import { Select } from './components/Form/Select'
 import { SelectItem } from './components/Form/Select/SelectItem'
-import { Textarea } from './components/Form/TextArea'
+import { Textarea } from './components/Form/Textarea'
 
 export default function Home() {
   return (
@@ -197,7 +197,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <Textarea />
+              <Textarea
+                id="bio"
+                defaultValue="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quod aspernatur repudiandae doloribus numquam distinctio ab similique illum repellat ducimus quibusdam.
+"
+              />
             </div>
           </div>
 
