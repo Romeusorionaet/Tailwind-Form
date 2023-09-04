@@ -6,13 +6,18 @@ import { Select } from './components/Form/Select'
 import { SelectItem } from './components/Form/Select/SelectItem'
 import { Textarea } from './components/Form/Textarea'
 import { Button } from './components/Button'
+import { ThemeControl } from './components/ThemeControl'
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
-        Settings
-      </h1>
+      <div className="flex justify-between">
+        <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
+          Settings
+        </h1>
+
+        <ThemeControl />
+      </div>
       <SettingsTabs />
 
       <div className="mt-6 flex flex-col">
